@@ -1,11 +1,10 @@
-import { Layout,Menu } from 'antd';
+import { Layout } from 'antd';
 import AppHeader from "../components/Header"
 import AppFooter from "../components/Footer"
 import ProductList from "../components/ProductList";
 import products from "../json/products.json";
 
 const { Header, Content, Footer,Sider} = Layout;
-
 
 
 
@@ -23,31 +22,21 @@ function Home() {
         console.log(collapsed, type);
       }}
     >
-      <div className="ham">
-      <Menu theme="dark"
-             mode="inline" 
-             className="menu"
-             defaultSelectedKeys={['6']}>
-        <Menu.Item key="1" className="menu-item">
-          Tableware
+        <div className="logo" />
+      <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+        <Menu.Item key="1" icon={<UserOutlined />}>
+          nav 1
         </Menu.Item>
-        <Menu.Item key="2" className="menu-item">
-          Cookware
+        <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+          nav 2
         </Menu.Item>
-        <Menu.Item key="3" className="menu-item">
-          Home accessories
+        <Menu.Item key="3" icon={<UploadOutlined />}>
+          nav 3
         </Menu.Item>
-        <Menu.Item key="4" className="menu-item">
-          Lighting
-        </Menu.Item>
-        <Menu.Item key="5" className="menu-item">
-          Textile
-        </Menu.Item>
-        <Menu.Item key="6" className="menu-item">
-          Furniture
+        <Menu.Item key="4" icon={<UserOutlined />}>
+          nav 4
         </Menu.Item>
       </Menu>
-      </div>
     </Sider>
     <Layout>
       <Header className="layout-header">
@@ -61,7 +50,6 @@ function Home() {
       </Footer>      
     </Layout>
     </Layout>
- 
   );
 }
 

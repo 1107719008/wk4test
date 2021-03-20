@@ -1,18 +1,8 @@
-import { Layout,Menu } from 'antd';
-import AppHeader from "../components/Header"
-import AppFooter from "../components/Footer"
-import ProductList from "../components/ProductList";
-import products from "../json/products.json";
+import NavBar from "./NavBar";
 
-const { Header, Content, Footer,Sider} = Layout;
-
-
-
-
-function Home() {
-  return (
-    <Layout className="container main-layout">
-      <Sider
+export default function Sider({title}) {
+   return (
+<Sider
       className="layout-sider"
       breakpoint="md"
       collapsedWidth="0"
@@ -49,20 +39,5 @@ function Home() {
       </Menu>
       </div>
     </Sider>
-    <Layout>
-      <Header className="layout-header">
-        <AppHeader title="NORDIC NEST Shopping Cart"/>
-      </Header>
-      <Content className="layout-content">
-        <ProductList products={products}/>
-      </Content>
-      <Footer className="layout-footer">
-        <AppFooter/>  
-      </Footer>      
-    </Layout>
-    </Layout>
- 
-  );
+   );
 }
-
-export default Home;

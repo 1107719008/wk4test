@@ -139,7 +139,7 @@ body {
 }
 .ant-layout-sider-children{
   background-color:#111828;
-  
+  margin-top:10rem;
 }
 .ant-layout-sider-zero-width-trigger {
   position: absolute;
@@ -318,7 +318,6 @@ body {
 .layout-sider{
   position: absolute;
   z-index: 9;
-  
+  transform: 80%;
   background: #141414;
-  
 }

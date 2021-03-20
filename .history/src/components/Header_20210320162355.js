@@ -17,7 +17,7 @@ export default function Header({title}) {
          </p>
          <hr className="hr-header-line" />
          <NavBar />
-         
+         <Sider/>
       </div>
    );
 }

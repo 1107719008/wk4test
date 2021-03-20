@@ -2,12 +2,11 @@ import { useState } from "react";
 import { Row, Col } from "antd";
 import { Select } from 'antd';
 import AddToCart from "./AddToCart"
-import NavBar from "./NavBar";
+
 const { Option } = Select;
 
 function ProductDetail({ product }) {
    const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
-   const [size, setSize] = useState();
 
    return (
       <Row gutter={[32, 32]}>
@@ -55,23 +54,18 @@ function ProductDetail({ product }) {
                   </Select>
                     size: 
                   <Select 
-                     defaultValue={size}
                      placeholder="Select a size"
                      className="select-style2"
-                     onChange={value=>setSize(value)}
                   >
-                    <Option value="S">S</Option>
-                     <Option value="M">M</Option>
-                     <Option value="L">L</Option>
+                    <Option value="s">S</Option>
+                     <Option value="m">M</Option>
+                     <Option value="l">L</Option>
                   </Select>
 
                   
                </p>
                <p className="product-qty">
                   Total Price: {product.price * qty}
-                  <p className="sizee">
-                  Size: {size}
-                  </p>
                </p>               
                <AddToCart />
             </div>

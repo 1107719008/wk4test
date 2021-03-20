@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Row, Col } from "antd";
 import { Select } from 'antd';
 import AddToCart from "./AddToCart"
-import NavBar from "./NavBar";
+
 const { Option } = Select;
 
 function ProductDetail({ product }) {
@@ -60,9 +60,9 @@ function ProductDetail({ product }) {
                      className="select-style2"
                      onChange={value=>setSize(value)}
                   >
-                    <Option value="S">S</Option>
-                     <Option value="M">M</Option>
-                     <Option value="L">L</Option>
+                    <Option value="s">S</Option>
+                     <Option value="m">M</Option>
+                     <Option value="l">L</Option>
                   </Select>
 
                   
@@ -70,7 +70,7 @@ function ProductDetail({ product }) {
                <p className="product-qty">
                   Total Price: {product.price * qty}
                   <p className="sizee">
-                  Size: {size}
+                  Size:{ size}
                   </p>
                </p>               
                <AddToCart />

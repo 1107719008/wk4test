@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Row, Col } from "antd";
 import { Select } from 'antd';
 import AddToCart from "./AddToCart"
-import NavBar from "./NavBar";
+
 const { Option } = Select;
 
 function ProductDetail({ product }) {

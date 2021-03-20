@@ -3,7 +3,7 @@ import AppHeader from "../components/Header"
 import AppFooter from "../components/Footer"
 import ProductList from "../components/ProductList";
 import products from "../json/products.json";
-
+import Sider from "../components/Sider"
 const { Header, Content, Footer,Sider} = Layout;
 
 

@@ -25,25 +25,25 @@ function Home() {
     >
       <div className="ham">
       <Menu theme="dark"
-             mode="inline" 
+             mode="vertical" 
              className="menu"
              defaultSelectedKeys={['6']}>
-        <Menu.Item key="1" className="menu-item">
+        <Menu.Item key="1" >
           Tableware
         </Menu.Item>
-        <Menu.Item key="2" className="menu-item">
+        <Menu.Item key="2" >
           Cookware
         </Menu.Item>
-        <Menu.Item key="3" className="menu-item">
+        <Menu.Item key="3" >
           Home accessories
         </Menu.Item>
-        <Menu.Item key="4" className="menu-item">
+        <Menu.Item key="4" >
           Lighting
         </Menu.Item>
-        <Menu.Item key="5" className="menu-item">
+        <Menu.Item key="5" >
           Textile
         </Menu.Item>
-        <Menu.Item key="6" className="menu-item">
+        <Menu.Item key="6" >
           Furniture
         </Menu.Item>
       </Menu>

@@ -129,7 +129,7 @@ body {
 }
 .ham{
   justify-content: space-around;
-  margin-top: 6.4rem;
+  margin-top: 4rem;
 }
 .menu{
   justify-content: space-around;
@@ -137,14 +137,8 @@ body {
   margin-left: 0;
   
 }
-.ant-layout-sider-children{
-  background-color:#111828;
-  
-}
 .ant-layout-sider-zero-width-trigger {
-  position: absolute;
-  top:20;
-  left:0;
+  display: none;
 }
 .menu-item{
   justify-content: space-around;
@@ -318,7 +312,6 @@ body {
 .layout-sider{
   position: absolute;
   z-index: 9;
-  
+  transform: 80%;
   background: #141414;
-  
 }

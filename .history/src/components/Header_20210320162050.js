@@ -1,5 +1,5 @@
 import NavBar from "./NavBar";
-import Sider from "./Sider";
+import Sider from "./Sider"
 import { Link } from "react-router-dom"
 
 export default function Header({title}) {
@@ -17,7 +17,6 @@ export default function Header({title}) {
          </p>
          <hr className="hr-header-line" />
          <NavBar />
-         
       </div>
    );
 }
